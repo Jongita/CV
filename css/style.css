@@ -64,7 +64,7 @@ h2 {
     font-size: 35px;
 }
 
-#aboutMe {
+.aboutMe {
     width: 90%;
     font-size: 18px;
 }
@@ -97,11 +97,40 @@ h2 {
 }
 
 .education {
-    width: 60%;
+    width: 50%;
 }
 
+@media (max-width: 460px) {
+    .education {
+        width: 100%;
+        margin: 0 30px;
+    }
+}
 
+@media (max-width: 460px) {
+    .navi_links {
+        width: 100%;
+        margin: 30px 0;
+    }
+}
 
+@media (max-width: 460px) {
+    .skillsAll {
+        margin: 0 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .headerinfo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px) {
+    .navi_links a {
+        font-size: 12px;
+    }
+}
 
 .expierenceContainer {
     width: 100%;
