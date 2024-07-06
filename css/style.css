@@ -1,0 +1,240 @@
+html,
+body {
+    margin: 0;
+}
+
+:root {
+    --primary-color:#131842;;
+    --secondary-color: #E68369;
+    --accent-color: #ECCEAE;
+    --text-color: #FBF6E2;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: var(--primary-color);
+    color: var(--text-color);
+    letter-spacing: .5px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headerinfo {
+    text-align: center;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hr {
+    display: none;
+} */
+
+
+h1 {
+    font-weight: 300;
+    font-size: 42px;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.mainFoto {
+    padding: 5px;
+    border-radius: 50%;
+}
+
+h2 {
+    color: #E68369;
+    padding: 10px 0 20px;
+    border-bottom: 1px solid #eee;
+    margin: 30px auto 20px;
+    text-align: center;
+    font-weight: 300;
+}
+
+#name {
+    width: 300px;
+    margin: 0 auto;
+    font-size: 35px;
+}
+
+#aboutMe {
+    width: 60%;
+    font-size: 18px;
+}
+
+.navibar {
+    height: 60px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, var(--accent-color) 0%, var(--secondary-color)100%);
+    margin-top: 20px;
+    display: flex;
+}
+
+.navi_links {
+    display: flex;
+    width: 100%;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.navi_links a {
+    text-decoration: none;
+    color:var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 1000;
+}
+
+.navi_links a:hover {
+    color:var(--accent-color);
+}
+
+.education {
+    width: 60%;
+}
+
+
+
+
+.expierenceContainer {
+    width: 100%;
+    display: flex;
+    /* padding: px; */
+}
+
+.expierenceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin-top: 20px;
+}
+/* 
+.restartContainer {
+    margin-top: 30px;
+} */
+
+.acordeon {
+    background-image: linear-gradient(to bottom, var(--accent-color) 0%, var(--secondary-color)100%);
+ 
+    /* padding: 1rem; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    /* padding: 5px; */
+    font-size: 26px;
+    color: white;
+
+}
+
+.acordeon p {
+    padding: 0 15px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.acordeon:hover {
+    background-color: #4d4b4b;
+}
+
+.acordeon::after {
+    font-family: "bootstrap-icons";
+    content: "\F4FE";
+    font-size: 50px;
+}
+
+.desc {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:var(--primary-color);
+    width: 100%;
+    /* font-size: 20px; */
+    text-align: left;
+}
+
+.active::after {
+    font-family: "bootstrap-icons";
+    content: "\F4FE";
+    font-size: 50px;
+    transform: rotate(45deg);
+}
+
+.desc li:last-child {
+    padding: 0 0 10px 10px;
+}
+
+.desc li {
+    padding: 0 10px;
+}
+
+
+.skills {
+    width: 80%;
+    margin: 30px auto;
+    color: #fff;
+    list-style: none;
+}
+
+.skills li {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+.box {
+    background: #fff;
+    display: block;
+    height: 4px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px;
+    flex-grow: 1;
+        /* Makes the box span the remaining width of the li */
+}
+
+.skills h3 {
+    font-size: 18px;
+    margin-right: 20px;
+       
+}
+
+.box span {
+    height: 12px;
+    float: left;
+    background: black;
+}
+
+.html {
+    width: 90%;
+    animation: html 2s;
+}
+
+.css {
+    width: 80%;
+    animation: css 2s;
+}
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
