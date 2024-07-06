@@ -65,7 +65,7 @@ h2 {
 }
 
 #aboutMe {
-    width: 60%;
+    width: 90%;
     font-size: 18px;
 }
 
@@ -117,13 +117,13 @@ h2 {
     gap: 3px;
     margin-top: 20px;
 }
-/* 
-.restartContainer {
+
+/* .restartContainer {
     margin-top: 30px;
 } */
 
 .acordeon {
-    background-image: linear-gradient(to bottom, var(--accent-color) 0%, var(--secondary-color)100%);
+    /* background-image: linear-gradient(to bottom, var(--text-color) 0%, var(--primary-color)10%); */
  
     /* padding: 1rem; */
     width: 100%;
@@ -134,7 +134,7 @@ h2 {
     display: flex;
     /* padding: 5px; */
     font-size: 26px;
-    color: white;
+    color: var(--text-color);
 
 }
 
@@ -145,8 +145,8 @@ h2 {
 }
 
 .acordeon:hover {
-    background-color: #4d4b4b;
-}
+    background-image: linear-gradient(to bottom, var(--accent-color) 0%, var(--secondary-color)100%);
+} 
 
 .acordeon::after {
     font-family: "bootstrap-icons";
@@ -183,28 +183,34 @@ h2 {
 }
 
 
+.skillsAll {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
 .skills {
     width: 80%;
-    margin: 30px auto;
-    color: #fff;
+    /* margin: 30px auto; */
+    color:var(--text-color);
     list-style: none;
 }
 
-.skills li {
+/* .skills li {
     display: flex;
     align-items: center;
-    /* margin-bottom: 20px; */
-}
+    margin-bottom: 20px;
+} */
 
 .box {
-    background: #fff;
+    background: var(--text-color);
     display: block;
     height: 4px;
-    border: 1px solid blue;
+    border: 1px solid var(--primary-color);
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 0 10px;
-    flex-grow: 1;
+    /* flex-grow: 1; */
         /* Makes the box span the remaining width of the li */
 }
 
@@ -217,7 +223,7 @@ h2 {
 .box span {
     height: 12px;
     float: left;
-    background: black;
+    background: var(--primary-color);
 }
 
 .html {
@@ -237,4 +243,29 @@ h2 {
     100%{
         width: 90%;
     }
+}
+
+.interests {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.icons i {
+    font-size: 50px;
+    padding: 20px;
+    width: 60px; /* Ensure width and height are equal */
+    height: 60px;
+    display: inline-flex; /* Center the icon vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%; /* This ensures a perfect circle */
+}
+
+.icons p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
