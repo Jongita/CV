@@ -11,7 +11,7 @@ _website design project_
 
 ## 🌟 About
 
-This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
+This project is for educational purposes only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
 
 Site published at: https://jongita.github.io/CV/
 
@@ -45,7 +45,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
     ```sh
-    git clone https://jongita.github.io/CollabNew/
+    git clone https://jongita.github.io/CV/
     ```
 2. Install NPM packages
     ```sh
