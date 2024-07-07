@@ -181,8 +181,9 @@ h2 {
     overflow: hidden;
     transition: max-height 0.8s ease;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
+    /* flex-direction: row;
+    justify-content: space-between; */
     background-color:var(--primary-color);
     width: 100%;
     text-align: left;
