@@ -23,18 +23,18 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .headerinfo {
     text-align: center;
-    width: 60%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
-/* hr {
-    display: none;
-} */
 
 
 h1 {
@@ -96,12 +96,12 @@ h2 {
     color:var(--accent-color);
 }
 
-.education {
+.mainSections {
     width: 50%;
 }
 
 @media (max-width: 460px) {
-    .education {
+    .mainSections {
         width: 100%;
         margin: 0 30px;
     }
@@ -135,7 +135,6 @@ h2 {
 .expierenceContainer {
     width: 100%;
     display: flex;
-    /* padding: px; */
 }
 
 .expierenceContainer {
@@ -147,21 +146,14 @@ h2 {
     margin-top: 20px;
 }
 
-/* .restartContainer {
-    margin-top: 30px;
-} */
 
 .acordeon {
-    /* background-image: linear-gradient(to bottom, var(--text-color) 0%, var(--primary-color)10%); */
- 
-    /* padding: 1rem; */
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
     display: flex;
-    /* padding: 5px; */
     font-size: 26px;
     color: var(--text-color);
 
@@ -180,7 +172,7 @@ h2 {
 .acordeon::after {
     font-family: "bootstrap-icons";
     content: "\F4FE";
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .desc {
@@ -192,7 +184,6 @@ h2 {
     justify-content: space-between;
     background-color:var(--primary-color);
     width: 100%;
-    /* font-size: 20px; */
     text-align: left;
 }
 
@@ -216,20 +207,15 @@ h2 {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    margin: 0 20px;
 }
 
 .skills {
     width: 80%;
-    /* margin: 30px auto; */
     color:var(--text-color);
     list-style: none;
 }
 
-/* .skills li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-} */
 
 .box {
     background: var(--text-color);
@@ -240,7 +226,6 @@ h2 {
     overflow: hidden;
     box-shadow: 0 0 10px;
     /* flex-grow: 1; */
-        /* Makes the box span the remaining width of the li */
 }
 
 .skills h3 {
@@ -256,13 +241,58 @@ h2 {
 }
 
 .html {
-    width: 90%;
-    animation: html 2s;
+    width: 50%;
+    animation: html 3s;
 }
 
-.css {
-    width: 80%;
-    animation: css 2s;
+.javascript {
+    width: 50%;
+    animation: javascript 3s;
+}
+
+.typecript {
+    width: 50%;
+    animation: typecript 3s;
+}
+
+.angular {
+    width: 60%;
+    animation: angular 3s;
+}
+
+.json {
+    width: 50%;
+    animation: json 3s;
+}
+
+.sql {
+    width: 50%;
+    animation: sql 3s;
+}
+
+.node {
+    width: 50%;
+    animation: node 3s;
+}
+
+.git {
+    width: 30%;
+    animation: git 3s;
+}
+
+.analytic {
+    width: 90%;
+    animation: analytic 3s;
+}
+
+.communication {
+    width: 90%;
+    animation: communication 3s;
+}
+
+.learning {
+    width: 90%;
+    animation: learning 3s;
 }
 
 @keyframes html {
@@ -270,6 +300,106 @@ h2 {
         width: 0%;
     }
     100%{
+        width: 50%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes typecript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes angular {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+
+@keyframes json {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes sql {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes node {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes git {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30%;
+    }
+}
+
+@keyframes analytic {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes communication {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes learning {
+    0% {
+        width: 0%;
+    }
+
+    100% {
         width: 90%;
     }
 }
@@ -283,13 +413,13 @@ h2 {
 .icons i {
     font-size: 50px;
     padding: 20px;
-    width: 60px; /* Ensure width and height are equal */
+    width: 60px;
     height: 60px;
-    display: inline-flex; /* Center the icon vertically and horizontally */
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     border: 2px solid white;
-    border-radius: 50%; /* This ensures a perfect circle */
+    border-radius: 50%;
 }
 
 .icons p{
@@ -297,4 +427,24 @@ h2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.contacts {
+    margin: 30px;
+    display: flex;
+    justify-content:space-between;
+    padding-bottom: 100px;
+    
+}
+
+.socials {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.contacts i,a {
+    font-size: 20px;
+    color: var(--text-color);
+    text-decoration: none;
 }
