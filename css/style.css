@@ -180,8 +180,8 @@ h2 {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.8s ease;
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
     /* flex-direction: row;
     justify-content: space-between; */
     background-color:var(--primary-color);
@@ -189,12 +189,12 @@ h2 {
     text-align: left;
   
 }
-
-/* .acordeon.active+.desc {
-    max-height: 30px; */
+/* 
+.acordeon.active+.desc {
+    max-height: max-content;
     /* Set a fixed height that suits your content */
 
-/* } */
+/* } */ 
 
 
 
