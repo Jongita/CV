@@ -190,10 +190,13 @@ h2 {
   
 }
 
-.acordeon.active+.desc {
-    max-height: 30px;
+/* .acordeon.active+.desc {
+    max-height: 30px; */
     /* Set a fixed height that suits your content */
-}
+
+/* } */
+
+
 
 .active::after {
     font-family: "bootstrap-icons";
