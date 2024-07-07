@@ -191,7 +191,7 @@ h2 {
 }
 
 .acordeon.active+.desc {
-    max-height: 200px;
+    max-height: 30px;
     /* Set a fixed height that suits your content */
 }
 
