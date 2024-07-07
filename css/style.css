@@ -157,6 +157,7 @@ h2 {
     font-size: 26px;
     color: var(--text-color);
 
+
 }
 
 .acordeon p {
@@ -185,6 +186,12 @@ h2 {
     background-color:var(--primary-color);
     width: 100%;
     text-align: left;
+  
+}
+
+.acordeon.active+.desc {
+    max-height: 200px;
+    /* Set a fixed height that suits your content */
 }
 
 .active::after {
